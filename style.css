@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+
+h5{
+    margin: 0;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+    justify-content:center;
+    font-size: 14px;
+    
+}    
+
+li a{
+    
+    text-align:center;
+    padding: 15px;
+    color: black;  
+   
+}
+
+
+.sub-nav{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color:rgb(247, 247, 247);
+}
+
+.sub-element{
+    background-color: transparent;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+}
+
+.new{
+    color: red;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+
+.big-heading{
+    text-align: center;
+    padding: 50px;
+    font-size: 64px;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.big-div{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+
+h3{
+    margin: 8px;
+    padding-top: 20px;
+    font-size: 36px;   
+}
+
+h2{
+    margin: 8px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+h4{
+    margin: 8px;
+    padding: 10px;
+    font-size: 26px;
+}
+
+.links-wraper{
+    display: flex;
+    justify-content:center;
+    height: 80px;
+    margin-top: 10px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border-radius: 16px;
+    margin: 0 20px;
+    width: 50px;
+    height: 28px;
+}
+
+.learn-more{
+    width: 100px;
+    height: 10px;
+    color: blue;
+    text-decoration: none;
+    font-size: large;
+    padding-top: 3px;
+}
+
+.big-card{
+
+    width: 500px;
+}
+
+.card-description{
+    width: 500px;
+    height: 100px;
+    padding-top: 35px;
+}
+
+.sec-two{
+    background-color:rgb(247, 247, 247);
+    height: 1500px;
+}
+
+
+.contaner{
+    background-color: transparent;
+    width:auto;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.small-heading{
+    text-align: center;
+    padding: 50px;
+    font-size: 44px;
+    color: black;
+    font-family:'Times New Roman', Times, serif
+}
+.card-container{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;  
+}
+
+.dots{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot1{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:darkgray;
+    margin:4px;
+}
+
+.dot2{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:gray;
+    margin:4px;
+}
+
+.mac-description{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.links-small{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-btn{
+    background-color: blue;
+    color: white;
+    border-radius: 16px;
+    margin: 0 20px;
+    width: 40px;
+    height: 22px;
+}
+
+
+
+.mbp-spec{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    height: 50px;
+    
+}
+
+.pic-spec {
+    margin: 0 auto;
+}
+
+.sec-three{
+    width: 100%;
+    background-color:rgb(242, 240, 240);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.large-container{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.large-card{
+    width: 520px;
+    height: 700px;
+    background-color:rgb(216, 216, 216);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-card3{
+    background-image:url(https://www.apple.com/v/macbook-pro/ah/images/overview/business__ww84q61opmqy_large_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 520px;
+    height: 700px;
+    background-color:rgb(216, 216, 216);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.large-card4{
+    background-image:url(https://www.apple.com/v/macbook-pro/ah/images/overview/education__d82em19gb3ue_large_2x.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 520px;
+    height: 700px;
+    background-color:rgb(216, 216, 216);
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-link{
+    color: white;
+    padding-bottom: 5px;
+}
+
+
+
+#small-h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.sec-four{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(222, 222, 222);
+}
+
+.footer-container{
+    width:90vw;
+    display: flex;
+    flex-direction: column;   
+}
+
+.footer-list{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column{
+    width: 180px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ul-footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.number-list{
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.paragraph{
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    
+}
+
+li{
+    
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    padding: 3px;
+}
+
+h6{
+    font-size: 12px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+}
+
+a{
+    color: black;
+}
+
+.sec-five{
+    width:100%;
+    height: 70px;
+    background-color:rgb(222, 222, 222);
+    
+
+}
+
+.final-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.final-paragraph{
+    
+    height:30px;
+    text-align:left;
+    font-size:14px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

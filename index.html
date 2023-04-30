@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSideMacBook</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+      <header>
+        <nav>
+            
+            <ul>
+                <li><a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEUDAQT///8AAAD19fX7+/vb29vR0dHk5OTs7Ozy8vLh4eHIyMjv7+9ubW7n5+fU1NSop6iOjY5HRke+vr5lZWZaWltCQUKsq6xOTk86OTp6eXoUExV0c3SoqKhUVFUrKiw2NTa3t7eXlpefn58cGxyFhYYjIiOJiIlqaWovLjCbm5sREBIEAAcnJieT9TTGAAAJMElEQVR4nO2d6XriOgyGg9j3HcJS1gLT9nD/t3cSYCjQ2JIcgZU+8/2b6Yztt0lsWZbkIKdShdp40+xBSaCpQKANadU+BwGcVBdoTR1ha9uL2YJYsBZoUBlhaXjFiwk7Ak2qIuyPbvBiwo1Ao4oI+5M7vJjwU6BZNYTl4SNfRDgWaFgJYWH6ky8i/D1zaXufBBj8nvVwk8gXrYltgcYVEFZHyYARYUWgef+ERQNfRPgh0b53wr4RMICBRAe+CbdmwAC2Ej14JuxYAGUWC8+EYxtgACJ9eCVc2wFDkU58EratgEKfoU/Cqh0wgJZINx4JQwRwJNONP8KDHVBm+5vzSFjC3lERky3nkfAde4RNoY58Ee4wQJGdUyxPhGZz+y+h0DzjjXCIAMpsfk/yQ1hHAWXsmVh+CEeve4R+CPsooMjO8CwvhBN0IhVaC2P5ICyij1DG5j7LB2ETe4Qryd48ELZQe60o2Z0Hwg4GKOHL/5YHQmS1h7lsd68nbCA7+2NBtr/XE47tgJILxUmvJxxYvU+ys0ys1xMGNg+poLV27U+8RUQNK6CID/heLye02KRPeEVzHgg35oOYj/IzOnw5oWk1BAgbT+nw5YSGfQVA90kdvpww0ccGcJSfRC96OWFizAVM80/r8NWE+YSoGehJRCSY5JsQAPb9p/bo9y2N+BbP5fNA+G20xVGI02es8Q8dPr2HB83gr2bdkvBGKVEvJ1xMIoXTcV3m/BOX72iT5+sfoQdV+uPP+WAYDpu7z7d16rdZgrBRfOvOe5cpZNabb9uuNnS1tFnADy0Hm5K7VZ6WsNyfjq5DuSwBkUbzPtvf0t4Ovm7j2G9XlWjnsXO0XFMRtrYTSBrTaVBBOGZAFrvLxJZuWzzuXKw7d8LCeoKOabQmWdTlz3drUzctbtivqyth+RDgQ4rHNK8jy3p1HRLovhvcMaceN8LynDqo6N+tNhbvRGk+I+P9bXBaezZhfkr/pZ/HFCab19XtktXStb05YzvpQLhljyr+gHaPNna+PqB8fIb26AFTbMK2Ke4cHVSvW7r+6iv9JvPtfGyuR/0cuYQH93HFm93hblyv9w/hl+PTu22NeAjHI2z9SE1iQ34bBykF8Eee0BJX70MwoSyOHEJDaos/wTvBRcAgnGsDpJ10kAkLSEivHxGO46iEBTRQy4/w7C8ioVbACHGGnFgRCVW+omfB0W7C0QitZ+++BZP0hFjIsmfBIS2hPT7EvwBsJwMEQixvwL/gv2oawiqWN+Bb0fbTtiXGCf+oB7Sfj6OEa/WASAwORojE2XkXrLD9BUaIxfN6FgzRAzqEsK77EcIO40MJV7oBKTE4dkLd0wzlCWKER82EMKUA2gnR3BafoiYoWgk/FBPCkAZoJdT8FcKeCGglVLuvjy0Z8umMhbCkF5BTyc1CONVLyMk6MRMW9JozMBM5XVO8VLBC+s2Eet1rvAxTI2FF7UsKwIrpNxJutQLS7G0C4UIrIQQWtxODsKHW/8RNWzARttUCAjNmyERoTt7xLHaKqYkQLVzhS+zsLwNhQlqEDvEz2Q2Eaq1ufuFdA6HW1ZCxa0IItZ6nQY8LaCLsaSWkeZ8IhGonGn4OUTJhQSugQx2+ZEKtU6lLVdpkQq1eNrILESXUarO5lKFPJtTqhHK5LCGZUGv8jEtRiWRCtcuhQ+GTZEKtx4bgkJKZTLjXSsgHNBDOfjth1VZDxqNAjFCrr/QfIZ1QbZjQr/8OA+A5g7NIyPZhGAjzagmlrLb8l1ZCh1pgGSN0KBqZbNNoPZZxqRqZTLjUSmhPPGAQao2kgRl/c5FMqPVcxqUqX7a8GHL+Uq2eKJcbE5IJ1WbJwJJd2C1b/tIIkV38I1s+b36cgokwr5eQvSJm7OzJwfg2EGpd8h2uTTAQql0QxeJpPtUSsq/QNRDqXS4CeOctiQbCml5CodjE/H96EZmF6U1RX2qDLwNuQIaJUGtAzUks081EqHiqicsoCBDW9Fo1ATUvz06Y152Yx3ArZi/O+yQIyPOpkVDtNv8sepypkVDvFvEssj/DnDOjeqoJsIomFEKtHsWriNabmRC5eEqBaDFgZkLNxvdZtDsxLBmWWkNObkSZbrKZQ3oVhOhm0UKIXhaqQbBPUa+tqvWc9E5osVZbtrryyi0XAfSsGZc2QsWZwHcCq3PKRtjQGpLxKICR+Wu01sVQb9ZcBTA0hdpYCVVv9O8FAM3k82EroeKiAz8Fhrg+ewWebMymFxlCUeyE2jeJdzJ4NpBKWJpr8DzIFHyKECr3ZdzKtCNGCMvZmWtMkZlYzb3MLImwMBBghFmx3MwpUWjtS63JJQ+CmSlAGiXU7645yRyXiRJmw66xFC7Ha9AeMkE4Mo4fJ2xl4SFaYhYJtaAzYJzaDhQJhEX9DxHeUhGqzZm9yhqAQiFU/xBhaxk9qa6+8odojyEiESo/wrA+wl9x+4M9Z49GqDoyA3F6E+8oURxABEv70ImEajMS8RQM6l1BarcYECIjJ9/3pDSCSOw2JLWnifj1cvRbyVSuGISobzphQ+OBKSGplHGznMJzGnSa4RHqC+YjpSNyCNUVkxC43+JBb7oIMWvGgVCXB5yYMssjVPWeEpNneISanPzGg4p0hLm5FkRyXgmXsKDFPiVndXMJc20dnyI9qZtNqGMfBUtycQU+oQYTHN8zpSIs+K98wqmB6UDo/1Nk1Ut2IYx2GV4RgVUQy4nQ75ki4abq9IQ+DVRgllJyJPQYLMXJzEtD2PKVq8AuluxK6OvIDUJuHSVnQj+IMBKqT0OS07IIN3L43yupSlg0Ma9hvWDtV73FYvQxc6B0qDCUjpBzY3dM09u9FVuV6ukx5BuVVmnTfOdQwsKh9GU6wlyFtmhEFF+H5GW6sV4QIcHh5odY6QjjjQY2umj8x67NZ5Q/QeKASPaPSWkJcxv74KKxD/ro9FDbzRBGODqUvTwpNWGutDcOLn7/urQbKfLjlflBRj/ZOdQqPys9YS7XTR5b9LeTNaOZ0iD5iwRLQgxBEoS5xjR4GFo81g/r15ekyjh8hIz/3GTXaLuVCGHE2Bld1rfLah52S07vVbkz/7i1CmAw5l+8cichwkiVdXexn33NRn82nbrDyvytan3c2Xbn8+52XXP+/K76H7KcnsT3hvm9AAAAAElFTkSuQmCC" 
+                    alt="apple-logo" width="17px" height="17px" />
+                    </a></li>
+                <li><a href="#" target="_blanks">Store</a></li>
+                <li><a href="#" target="_blanks">Mac</a></li>
+                <li><a href="#" target="_blanks">iPad</a></li>
+                <li><a href="#" target="_blanks">iPhone</a></li>
+                <li><a href="#" target="_blanks">Watch</a></li>
+                <li><a href="#" target="_blanks">AirPods</a></li>
+                <li><a href="#" target="_blanks">TV & Home</a></li>
+                <li><a href="#" target="_blanks">Entertainment</a></li>
+                <li><a href="#" target="_blanks">Accesories</a></li>
+                <li><a href="#" target="_blanks">Ventura</a></li>
+                
+                <li><a href="#" target="_blanks">
+                    <img class="icon-nav" src="/Pictures/search icon 1.png"
+                    alt="search icon1" width="17px" height="17px" />
+                    </li>
+                <li><a href="#" target="_blanks">
+                        <img class="icon-nav" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLfFlEg3SyLQWhosUzF23hMArNqWzxkkd6dApBmFVCww&s"
+                        alt="search icon2" width="17px" height="17px" />
+                        </li>
+            </ul>
+        </nav>
+      </header>
+    
+      <section class="sec-one">
+        <div class="sub-nav">
+            <div class="sub-element">
+                <img src="/Pictures/output-onlinepngtools.png"
+                 alt="MacBook Pro 13" width="70px" height="40px"/>
+                <p>MacBook Pro 13"</p>
+            </div>
+
+            <div class="sub-element">
+                <img src="/Pictures/output-onlinepngtools.png"
+                 alt="MacBook Pro 13" width="70px" height="40px"/>
+                <p>MacBook Pro 14" and 16"</p>
+                <p class="new">New</p>
+            </div>
+
+            <div class="sub-element">
+                <img src="/Pictures/output-onlinepngtools.png"
+                 alt="MacBook Pro 13" width="70px" height="40px"/>
+                <p class="compare">Compare</p>
+            </div>
+
+            <div class="sub-element">
+                <img src="/Pictures/output-onlinepngtools.png"
+                 alt="MacBook Pro 13" width="70px" height="40px"/>
+                <p>Displays</p>
+            </div>
+
+            <div class="sub-element">
+                <img src="/Pictures/output-onlinepngtools.png"
+                 alt="MacBook Pro 13" width="70px" height="40px"/>
+                <p>Accesories</p>
+            </div>
+
+            <div class="sub-element">
+                <img src="/Pictures/output-onlinepngtools.png"
+                 alt="MacBook Pro 13" width="70px" height="40px"/>
+                <p>Ventura</p>
+            </div>
+
+        </div>
+       <h1 class="big-heading">MacBook Pro</h1>
+       <div class="big-div">
+        <div class="big-card">
+            <img src="/Pictures/hero_13__d1tfa5zby7e6_large.jpg"
+                alt="MacBookPro13" width="460px" height="260px"/>
+            
+            <div class="card-description"><h3>M2 chip</h3>
+                <h2>MacBook Pro 13"</h2>
+                <div class="links-wraper">
+                   <button>Buy</button>
+                   <a class="learn-more" href="#">Learn more ></a>
+                </div>
+            </div>
+             
+        </div>
+
+        <div class="big-card">
+            <img src="/Pictures/hero_14_16__bux8byft94oi_large.jpg"
+             alt="MacBook Pro 14” and 16”" width="480px" height="260px"/> 
+             <p class="new">New</p>
+             <h3>M2 Pro or M2 Max chip</h3>
+             <h2>MacBook Pro 14” and 16”</h2>
+             <div class="links-wraper">
+                <button>Buy</button>
+                <a class="learn-more" href="#">Learn more ></a>
+             </div>
+        </div>
+    </div>
+
+      </section>
+
+      <section class="sec-two">
+        <div class="container">
+            <h1 class="small-heading">Which laptop is right for you?</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/Pictures/viber_image_2023-04-22_12-57-07-786.png" alt="MacBook Pro 13”" width="300px" height="120px">
+                    <div class="dots">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                    </div>
+                    <div class="mac-description">
+                        <h4>MacBook Pro 13</h4>
+                        <p>from $1299</p>
+                    </div>
+                    <div class="links-small">
+                        <button class="small-btn">Buy</button>
+                        <a>Learn more ></a> <br />
+                        <hr width="300px">
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>13.3”</h5>
+                        <p>Retina display</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/m2_chip.jpeg" width="40px" height="40px"/> 
+                        <p>Apple M2 chip</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>8-core</h5>
+                        <p>CPU</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>10-core</h5>
+                        <p>GPU</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_unified_memory__ffifjo8779u2_large.png" width="40px" height="40px" />
+                        <p>Up to 24GB unified memory</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>2TB</h5>
+                        <p>Maximum configurable storage2</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/images (1) (1).png" width="50px" height="50px"/>
+                        <p>Up to 20 hours battery life3</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/1200px-Video_camera_icon.svg.png" width="40px" height="40px"/>
+                        <p>720p FaceTime HD camera</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_mic__cyh2g8u3lqc2_large.png" width="40px" height="25px"/>
+                        <p>Studio-quality three-mic array Stereo speakers with Spatial Audio</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>3.0 lb.</h5>
+                        <p>Weight</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_touch.png" width="40px" height="40px"/>
+                        <p>Touch Bar and Touch ID</p>
+                    </div>
+    
+                </div>
+                <div class="card">
+                    <img src="/Pictures/viber_image_2023-04-22_12-57-07-786.png" alt="MacBook Pro 14”" width="300px" height="120px">
+                    <div class="dots">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                    </div>
+                    <div class="mac-description">
+                        <h4>MacBook Pro 14”</h4>
+                        <p>from $1999</p>
+                    </div>
+                    <div class="links-small">
+                        <button class="small-btn">Buy</button>
+                        <a>Learn more ></a> <br />
+                        <hr width="300px">
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>14.2”</h5>
+                        <p>Liquid Retina XDR display</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/Apple-M2-chips-hero-230117.jpg.landing-big_2x.jpg" width="60px" height="40px"/>
+                        <p>Apple M2 Pro chip, Apple M2 Max chip</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <p>Up to</p>
+                        <h5>12-core</h5>
+                        <p>CPU</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <p>Up to</p>
+                        <h5>38-core</h5>
+                        <p>CPU</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_unified_memory__ffifjo8779u2_large.png" width="40px" height="40px" />
+                        <p>Up to 96GB unified memory</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>8TB</h5>
+                        <p>Maximum configurable storage</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/images (1) (1).png" width="50px" height="50px" />
+                        <p>Up to 18 hours battery life</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/1200px-Video_camera_icon.svg.png" width="40px" height="40px" />
+                        <p>1080p FaceTime HD camera</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_mic__cyh2g8u3lqc2_large.png" width="40px" height="25px" />
+                        <p>Studio-quality three-mic array
+                            Six-speaker sound system with Spatial Audio</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>3.5 lb.</h5>
+                        <p>Weight</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_touch.png" width="40px" height="40px" />
+                        <p>Touch ID</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="pic-spec" src="/Pictures/viber_image_2023-04-22_12-57-07-786.png" alt="MacBook Pro 16”" width="300px" height="120px">
+                    <div class="dots">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                    </div>
+                    <div class="mac-description">
+                        <h4>MacBook Pro 16”</h4>
+                        <p>from $2499</p>
+                    </div>
+                    <div class="links-small">
+                        <button class="small-btn">Buy</button>
+                        <a>Learn more ></a> <br />
+                        <hr width="300px">
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>16.2”</h5>
+                        <p>Liquid Retina XDR display</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/Apple-M2-chips-hero-230117.jpg.landing-big_2x.jpg" width="60px" height="40" />
+                        <p>Apple M2 Pro chip, Apple M2 Max chip</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>12-core</h5>
+                        <p>CPU</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <p>Up to</p>
+                        <h5>38-core</h5>
+                        <p>CPU</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_unified_memory__ffifjo8779u2_large.png" width="40px" height="40px"> 
+                        <p>Up to 96GB unified memory</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>8TB</h5>
+                        <p>Maximum configurable storage</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/images (1) (1).png" width="50px" height="50px"> 
+                        <p>Up to 22 hours battery life</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/1200px-Video_camera_icon.svg.png" width="40px" height="40px" />
+                        <p>1080p FaceTime HD camera</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_mic__cyh2g8u3lqc2_large.png" width="40px" height="25px">  
+                        <p>Studio-quality three-mic array
+                            Six-speaker sound system with Spatial Audio</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <h5>4.7 lb.</h5>
+                        <p>Weight</p>
+                    </div>
+                    <div class="mbp-spec">
+                        <img class="pic-spec" src="/Pictures/compare_icon_touch.png" width="40px" height="40px" />
+                        <p>Touch ID</p>
+                    </div>
+    
+            </div>
+    
+        </div>
+       
+    
+      </section>
+
+      <section class="sec-three">
+        <div class="large-container">
+            <div class="large-card">
+                <h4>Accesories</h4>
+                <h2>Explore Mac<br>accesories.</h2>
+                <div class="large-button">
+                    <button>Shop</button></div>
+                    <img src="/Pictures/slika1.jpg" width="480px" height="280px"/>
+            </div>
+            <div class="large-card">
+                <h4>Aple Trade In</h4>
+                <h2>Get credit towards a new MacBook Pro.</h2>
+                <p>Just trade in your eligible computer for credit towards a new one or recycle it for free. 
+                It's good for you and the planet.*</p>
+                <div class="large-content">
+                    <a href="#" > Find your trade-in value ></a>
+                </div>
+                <img src="Pictures/slika2.jpeg" width="400px" height="240px" />  
+            </div>
+            <div class="large-card3"> 
+                <h4><b>Apple at Work</b></h4>
+                <h2 id="small-h2">Get the power to take your business to the next level.</h2>
+                <div class="large-content">
+                    <a class="white-link" href="#" > Learn about Apple at Work ></a> <br/>
+                    <a class="white-link" href="#" > Learn more about Mac for business ></a>
+                </div>
+                
+                </div>
+                <div class="large-card4">
+                    <h2>Apple and Education</h2>
+                    <p>Get credit towards a new MacBook Pro.</p> <br/>
+                    <div class="large-content">
+                        <a class="white-link" href="#" > Learn about Apple and Education ></a>
+                    </div>
+                   
+                    </div>  
+            
+        </div>
+
+        
+        
+      </section>    
+      <section class="sec-four">
+
+        <div class="footer-container">
+            <div class="global-footer">
+                <p class="paragraph">* Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade‑in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</p>
+                <ol type="1">
+                    <li class="number-list">Screen size is measured diagonally. The displays on the 14‑inch and 16‑inch MacBook Pro have rounded corners at the top. When measured as a standard rectangular shape, the screens are 14.2 inches and 16.2 inches diagonally (actual viewable area is less).
+                    </li>
+                    <li class="number-list">1TB = 1 trillion bytes; actual formatted capacity less.
+                    </li>
+                    <li class="number-list">Testing conducted by Apple in May 2022 using preproduction 13‑inch MacBook Pro systems with Apple M2, 8‑core CPU, 10‑core GPU, 8GB of RAM, and 256GB SSD. The wireless web test measures battery life by wirelessly browsing 25 popular websites with display brightness set to 8 clicks from bottom. The Apple TV app movie playback test measures battery life by playing back HD 1080p content with display brightness set to 8 clicks from bottom. Battery life varies by use and configuration. See apple.com/batteries for more information.
+
+                    </li>
+                    <li class="number-list">Testing conducted by Apple in November and December 2022 using preproduction 14‑inch MacBook Pro systems with Apple M2 Pro, 12‑core CPU, 19‑core GPU, 16GB of RAM, and 1TB SSD. The wireless web test measures battery life by wirelessly browsing 25 popular websites with display brightness set to 8 clicks from bottom. The Apple TV app movie playback test measures battery life by playing back HD 1080p content with display brightness set to 8 clicks from bottom. Battery life varies by use and configuration. See apple.com/batteries for more information.
+
+                    </li>
+                    <li class="number-list">Testing conducted by Apple in November and December 2022 using preproduction 16‑inch MacBook Pro systems with Apple M2 Pro, 12‑core CPU, 19‑core GPU, 16GB of RAM, and 1TB SSD. The wireless web test measures battery life by wirelessly browsing 25 popular websites with display brightness set to 8 clicks from bottom. The Apple TV app movie playback test measures battery life by playing back HD 1080p content with display brightness set to 8 clicks from bottom. Battery life varies by use and configuration. See apple.com/batteries for more information.
+
+                    </li>
+                    
+                </ol> <br/>
+                <p class="paragraph">To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.
+                    Available for qualifying applicants in the United States.
+                    Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                    If you reside in the U.S. territories, please call Goldman Sachs at 877‑255‑5923 with questions about Apple Card.</p> <br/>
+                    <hr>
+  
+            </div>
+            <div class="footer-list">
+                <div class="footer-column">
+                    <ul class="ul-footer">
+                        <h6>Shop and learn</h6>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">Tv&Home</a></li>
+                        <li><a href="#">AirTag</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                    <ul class="ul-footer">
+                        <h6>Apple Wallet</h6>
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Apple Card</a></li>
+                        <li><a href="#">Apple Pay</a></li>
+                        <li><a href="#">Apple Cash</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="ul-footer">
+                        <h6>Account</h6>
+                        <li><a href="#">Apple ID</a></li>
+                        <li><a href="#">Apple Store </a></li>
+                        <li><a href="#">iCloud.com</a></li>              
+                    </ul>
+                    <ul class="ul-footer">
+                        <h6>Entertainment</h6>
+                        <li><a href="#">Apple One</a></li>
+                        <li><a href="#">Apple TV+</a></li>
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">Apple Arcade</a></li>
+                        <li><a href="#">Apple Fitness+</a></li>
+                        <li><a href="#">Apple News+</a></li>
+                        <li><a href="#">Apple Podcasts</a></li>
+                        <li><a href="#">Apple Books</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="ul-footer">
+                        <h6>Apple Store</h6>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Genius Bar</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Apple Camp</a></li>
+                        <li><a href="#">Apple Store App</a></li>
+                        <li><a href="#">Certified</a></li>
+                        <li><a href="#">Apple Trade In</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shopping Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="ul-footer">
+                        <h6>For Business</h6>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                    <ul class="ul-footer">
+                        <h6>For Education</h6>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Shop for K-12</a></li>
+                        <li><a href="#">Shop for College</a></li>
+                    </ul>
+                    <ul class="ul-footer">
+                        <h6>For Healthcare</h6>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Health on Watch</a></li>
+                        <li><a href="#">Health Records</a></li>
+                    </ul>
+                    <ul class="ul-footer">
+                        <h6>For Government</h6>
+                        <li><a href="#">Shop Government</a></li>
+                        <li><a href="#">Shop Military</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul class="ul-footer">
+                        <h6>Apple Values</h6>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Inclusion Diversity</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Racial Equity</a></li>
+                        <li><a href="#">Responsibility</a></li>
+
+                    </ul>
+                        <ul class="ul-footer">
+                            <h6>About Apple</h6>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Apple Leadership</a></li>
+                            <li><a href="#">Opportunities</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Ethics</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact Apple</a></li>
+                        </ul>
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+
+       
+      </section>
+      <section class="sec-five">
+        <nav>
+            <p class="final-paragraph">More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.</p>
+            <hr>
+            <ul class="final-footer">
+                <li><a href="#">Copyright © 2023 Apple Inc. All rights reserved.</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Site Map</a></li>
+                
+            </ul>
+        </nav>
+      </section>
+</body>
+
+</html>
